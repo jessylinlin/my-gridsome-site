@@ -5,6 +5,14 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
-  plugins: []
+    siteName: 'Gridsome',
+    plugins: [
+
+    ],
+    templates: {
+        Post: [{
+            path: '/posts/:id',
+            component: './src/templates/Post.vue'
+        }]
+    }
 }
